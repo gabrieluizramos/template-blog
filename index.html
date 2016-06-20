@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="theme-color" content="#222222" />
+	<title>Blog</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+	<header class="header">
+		<h1>Blog Template</h1>
+	</header>
+	<section class="section">
+		<ul class="ul posts">
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/geleira.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+			<li class="post" style="background-image:url(images/escritorio.jpg);">
+				<a href="post.html" class="post-link">
+					<strong class="post-titulo">Titulo</strong>
+					<span class="post-descricao">descrição...</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			Template de Blog Desenvolvido por Gabriel Ramos
+		</div>
+	</footer>
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script>
+		$( window ).scroll( function() {
+			$( '.post' ).each( function( index , element ){
+				var hT = $( element ).offset().top,
+				hH = $( element ).outerHeight(),
+				wH = $( window ).height(),
+				wS = $( window ).scrollTop();
+				if ( wS > ( hT + hH - wH - 50 ) ){
+					$( element ).addClass( 'show' );
+				}
+			});
+		});
+		for (var i = 1; i <= 4; i++) {
+			$( '.post:nth-child('+ i +')' ).addClass( 'show' );
+		}
+	</script>
+</body>
+</html>
